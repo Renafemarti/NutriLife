@@ -88,25 +88,29 @@ public class ResultadoActivity extends AppCompatActivity {
     private void classificarImc(double valor) {
         if (valor < 17.0) {
             classificacaoImc = "Muito abaixo do peso";
-            riscosImc = "Atenção! Procure orientação nutricional.";
+            riscosImc = "Maior risco de problemas de saúde, deficiências nutricionais, redução do desempenho físico e fraqueza/letargia\n";
         } else if (valor < 18.5) {
             classificacaoImc = "Abaixo do peso";
-            riscosImc = "Fique atento à sua alimentação.";
+            riscosImc = "Maior risco de problemas relacionados ao baixo peso e deficiências nutricionais\n";
         } else if (valor < 25.0) {
             classificacaoImc = "Peso normal";
-            riscosImc = "Você está dentro do peso adequado.";
+            riscosImc = "Faixa de peso considerada adequada para a maioria dos adultos";
         } else if (valor < 30.0) {
             classificacaoImc = "Sobrepeso";
-            riscosImc = "Fique de olho, pequenos ajustes podem ajudar pra abaixar o IMC.";
+            riscosImc = "Maior risco de alterações metabólicas, diabetes tipo 2 e doenças\n" +
+                    "cardiovasculares";
         } else if (valor < 35.0) {
             classificacaoImc = "Obesidade Grau I";
-            riscosImc = "Considere buscar acompanhamento profissional.";
+            riscosImc = "Risco elevado de diabetes tipo 2, hipertensão e doenças\n" +
+                    "cardiovasculares";
         } else if (valor < 40.0) {
             classificacaoImc = "Obesidade Grau II";
-            riscosImc = "Procure orientação médica o quanto antes.";
+            riscosImc = "Risco muito elevado de complicações metabólicas, cardiovasculares\n" +
+                    "e respiratórias";
         } else {
             classificacaoImc = "Obesidade Grau III";
-            riscosImc = "Busque acompanhamento médico com urgência.";
+            riscosImc = "Risco muitíssimo elevado de comorbidades e comprometimento da\n" +
+                    "saúde e qualidade de vida ";
         }
     }
 
